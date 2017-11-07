@@ -1,4 +1,4 @@
-package patentcount;
+package com.bd.patentcount;
 
 import java.io.IOException;
 
