@@ -46,7 +46,7 @@ public class PatentCount {
 
 		Configuration conf = new Configuration();
 		Job job = Job.getInstance(conf, "patent count");
-		job.setJarByClass(CPatentCount.class);
+		job.setJarByClass(PatentCount.class);
 		job.setMapperClass(TokenizerMapper.class);
 		job.setCombinerClass(IntSumReducer.class);
 		job.setReducerClass(IntSumReducer.class);

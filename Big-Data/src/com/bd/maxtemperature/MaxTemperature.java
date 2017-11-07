@@ -46,7 +46,7 @@ public class MaxTemperature {
 
 		Configuration conf = new Configuration();
 		Job job = Job.getInstance(conf, "temperature max");
-		job.setJarByClass(CTemperatureMax.class);
+		job.setJarByClass(MaxTemperature.class);
 		job.setMapperClass(TokenizerMapper.class);
 		job.setCombinerClass(IntSumReducer.class);
 		job.setReducerClass(IntSumReducer.class);
