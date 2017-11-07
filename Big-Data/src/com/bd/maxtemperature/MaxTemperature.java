@@ -22,7 +22,7 @@ public class MaxTemperature {
 		public void map(Object key, Text value, Context context) throws IOException, InterruptedException {
 			String[] inputArr = value.toString().trim().split("\\s+");
 			word.set(inputArr[0]);
-			context.write(word, new IntWritable(new Integer(inputArr[1])));
+			context.write(word, new IntWritable( Integer.valueOf(inputArr[1])));
 
 		}
 	}

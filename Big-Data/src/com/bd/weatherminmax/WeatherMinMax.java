@@ -24,8 +24,8 @@ public class WeatherMinMax {
 				String[] input = value.toString().split("\\s+");
 
 				String date = input[1];
-				Double min = new Double(input[5]);
-				Double max = new Double(input[6]);
+				Double min = Double.valueOf(input[5]);
+				Double max = Double.valueOf(input[6]);
 
 				if (min < 10.0) {
 					dateTxt.set(date);
